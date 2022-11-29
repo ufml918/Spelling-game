@@ -1,4 +1,4 @@
-#Spelly-streak
+# Spelly-streak
 
 
 SPELLY Streak provides teachers a fun and engaging tool for
