@@ -11,11 +11,14 @@ print("在此提醒，若執行過程中，出現erroe等字詞，代表使用�
 match.game_process()
 point += match.p
 
-print(point)
+input("\n按下[ENTER]鍵前往下一關吧\n:")
 
 #Spelly streak
+print("你好！歡迎參加SPELLY streak拼字大賽\n")
 print("Spelly streak遊戲說明:\n")
 print("玩家要一次猜一個英文字母，並嘗試猜出完整的英文單字。(範例:apple)\n要猜的字以一列橫線表示(-----)，代表目前猜字狀況。\n如果猜字的玩家猜中其中一個字母，另一位便須於該字母出現的所有位置上寫上該字母。(-pp--)\n直到猜出單字或機會用光為止。\n")
+
+input("\n瞭解規則後，按下[ENTER]鍵開始吧\n:")
 
 streak.question()
 
@@ -30,3 +33,7 @@ while(1): # 1 == true
         break
 
     streak.game_process()
+
+print()
+print(f"遊戲結果:\n第一關Spelly-match獲得{point}分\n第二關Spelly-streak剩餘{streak.lives}次機會")
+print("感謝遊玩，希望你的英文能有所進步喔！")
