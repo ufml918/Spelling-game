@@ -16,3 +16,14 @@ get students to memorize words they
 ve learned while making sure
 they know the right spelling. Students will also become familiar
 with ways vowels and consonants appear in words.
+
+# Spelly-match
+SPELLY Match is a tool that help teachers creates a minicompetition for language learners. Students would first enter and
+confirm their names to initiate the game. We put in several
+safeguards to make sure the names they put in are correct. In the
+game, players will be given questions in their native language, and
+they need to get the correct word and spelling in the target
+language to score points. The system will reveal the correct word
+and spelling if the players did not get a question right. At the end
+of the game, the system will calculate total points received and
+award medals based on pre-determined values.
