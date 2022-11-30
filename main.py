@@ -6,6 +6,8 @@ from spelly_match import match
 point = 0
 chosegame =0
 
+print("你好，歡迎參加Spelly拼字遊戲！")
+
 #確定分數由0開始
 name = input("開始之前，我們需要基本資料。<輸入完成請按[ENTER]鍵> 請輸入你的姓名： ") 
 stripname = name.strip()
