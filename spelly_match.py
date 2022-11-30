@@ -2,33 +2,6 @@ class match():
     p = 0
     def game_process():
 
-        
-        #確定分數由0開始
-        name = input("開始之前，我們需要基本資料。<輸入完成請按[ENTER]鍵> 請輸入你的姓名： ") 
-        stripname = name.strip()
-        #確保使用者輸入的名字沒有空格
-        namecheck = int(input("\n為確保資料無誤，與你核對名字。你叫 [" + stripname + "] 對嗎？ <輸入完成請按[ENTER]鍵> 是請輸入數字1，否請輸入數字2： \n"))
-        while True:
-        #以while迴圈確保使用者只有在完成姓名確認後才能比賽
-            if (namecheck != 1 and namecheck != 2): 
-                print("\n輸入無效！請重新執行程式！若需支援請舉手！") 
-                break
-                #設計如果使用者輸入1和2以外其他字元，強制關閉
-            elif namecheck == 1:
-                print("歡迎你! " + stripname)
-            elif namecheck == 2: 
-                newnamecheck = 0
-                while 1:
-                    
-                    newname = input("\n好吧！我們再試一次！<輸入完成請按[ENTER]鍵> 請在此輸入你的姓名： ")
-                    newstripname = newname.strip()
-                    #確保使用者輸入的名字沒有空格
-                    newnamecheck = int(input("\n你叫 [" + newstripname + "], 對嗎？ <輸入完成請按[ENTER]鍵> 是請輸入數字1，否請輸入數字2： "))
-                    if newnamecheck == 1:
-                        print("\n歡迎你! " + newstripname)
-                        break
-
-
             print("\n以下是基本規則:")
             print("\n規則1:題目中文為，選手須回答英文，單字拼字需正確才給分")
             print("\n規則2:答案不分大小寫，只要拼字正確便得1分")

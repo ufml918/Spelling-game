@@ -1,7 +1,9 @@
+#Input build-in function “random” and input tones of words from module ”words”
 import random
 from words import word
 
 class streak():
+    #在函式中常常用到的的變數
     chosen_word = random.choice(word) #從list中隨機抓一個字
     current_word = [] #持續更新已猜對的字母
     already_guessed = [] #列出玩家猜過的字母
@@ -9,6 +11,7 @@ class streak():
     alphabets = "abcdefghijklmnopqrstuvwxyz" #所有字母
     lives = 0
 
+    #live函式讓玩家選擇難易度
     def live():
         global lives #使此變數可以在其他函數使用
 
@@ -42,6 +45,7 @@ class streak():
                 print() 
                 print("***請輸入1 ~ 5 喔！***\n")
 
+    #check函式回報玩家目前猜字狀態
     def check(): #回報玩家目前猜字狀態
 
 
@@ -62,7 +66,7 @@ class streak():
         print(f"你已經猜過的字母：{visual1}")
 
 
-
+    #給玩家他們該知道的資訊
     def question():
         streak.live()
         print(f"你還有{streak.lives}個機會")
@@ -72,7 +76,7 @@ class streak():
         for i in range(streak.letter_counts): #將字母視覺化
             streak.current_word.append("-")
 
-
+    #game_process函式收錄遊戲過程
     def game_process():
         guess = input("猜一個字母吧: ").lower() #用lower確保輸入大寫字母也沒問題
 
