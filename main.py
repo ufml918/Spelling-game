@@ -68,7 +68,7 @@ elif chosegame == 2:
             break
     
         streak.game_process()
-    print(f"遊戲結果:Spelly-streak剩餘{streak.lives}次機會")
+    print(f"你贏了，還剩餘{streak.lives}次機會")
 
 #end
 print()
